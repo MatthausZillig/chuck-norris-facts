@@ -51,7 +51,7 @@ class JokeDirectory extends Component {
     const { value } = this.state.joke
     return (
       <div className="joke-directory">
-        <p>{`"${value}"`}</p>
+        <p className="joke-directory__text">{`"${value}"`}</p>
         <div>
           <CustomButton isMoreJokes onClick={this.getJokeByCategory}>
             One more Fact...
