@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  .header__logo {
+    align-self: center;
+    .header__src:hover {
+      width: 96px;
+    }
+  }
+  .header__content {
+    align-self: center;
+  }
+}

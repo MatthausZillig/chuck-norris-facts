@@ -1,0 +1,13 @@
+$break-small: 600px;
+$break-large: 1200px;
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 80px;
+
+  @media screen and (max-width: $break-small) {
+    padding: 0px;
+  }
+}
