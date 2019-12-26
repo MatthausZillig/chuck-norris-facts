@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/chuck-norris-facts/static/css/main.08cf55a8.chunk.css",
+    "main.js": "/chuck-norris-facts/static/js/main.a235dac6.chunk.js",
+    "main.js.map": "/chuck-norris-facts/static/js/main.a235dac6.chunk.js.map",
+    "runtime-main.js": "/chuck-norris-facts/static/js/runtime-main.50c6ac7f.js",
+    "runtime-main.js.map": "/chuck-norris-facts/static/js/runtime-main.50c6ac7f.js.map",
+    "static/js/2.3ba41e62.chunk.js": "/chuck-norris-facts/static/js/2.3ba41e62.chunk.js",
+    "static/js/2.3ba41e62.chunk.js.map": "/chuck-norris-facts/static/js/2.3ba41e62.chunk.js.map",
+    "static/css/3.c3fd117e.chunk.css": "/chuck-norris-facts/static/css/3.c3fd117e.chunk.css",
+    "static/js/3.2568a6ee.chunk.js": "/chuck-norris-facts/static/js/3.2568a6ee.chunk.js",
+    "static/js/3.2568a6ee.chunk.js.map": "/chuck-norris-facts/static/js/3.2568a6ee.chunk.js.map",
+    "static/css/4.0822c98a.chunk.css": "/chuck-norris-facts/static/css/4.0822c98a.chunk.css",
+    "static/js/4.0a2d7b98.chunk.js": "/chuck-norris-facts/static/js/4.0a2d7b98.chunk.js",
+    "static/js/4.0a2d7b98.chunk.js.map": "/chuck-norris-facts/static/js/4.0a2d7b98.chunk.js.map",
+    "index.html": "/chuck-norris-facts/index.html",
+    "precache-manifest.871163bc67af068d09b4481763ed847b.js": "/chuck-norris-facts/precache-manifest.871163bc67af068d09b4481763ed847b.js",
+    "service-worker.js": "/chuck-norris-facts/service-worker.js",
+    "static/css/3.c3fd117e.chunk.css.map": "/chuck-norris-facts/static/css/3.c3fd117e.chunk.css.map",
+    "static/css/4.0822c98a.chunk.css.map": "/chuck-norris-facts/static/css/4.0822c98a.chunk.css.map",
+    "static/css/main.08cf55a8.chunk.css.map": "/chuck-norris-facts/static/css/main.08cf55a8.chunk.css.map",
+    "static/js/2.3ba41e62.chunk.js.LICENSE": "/chuck-norris-facts/static/js/2.3ba41e62.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.50c6ac7f.js",
+    "static/js/2.3ba41e62.chunk.js",
+    "static/css/main.08cf55a8.chunk.css",
+    "static/js/main.a235dac6.chunk.js"
+  ]
+}
