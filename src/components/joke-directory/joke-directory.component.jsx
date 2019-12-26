@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import CustomButton from '../custom-button/custom-button.component'
+import Loading from '../loading/loading.component'
 import axios from 'axios'
 import './joke-directory.styles.scss'
 
@@ -11,19 +12,19 @@ class JokeDirectory extends Component {
 
     this.state = {
       category: 'animal',
-      joke: []
+      joke: [],
+      isLoading: false
     }
 
     this.getJokeByCategory = this.getJokeByCategory.bind(this)
   }
 
   getJokeByCategory() {
-    console.log('entrou')
+    this.setState({ isLoading: false })
     axios
       .get(`https://api.chucknorris.io/jokes/random?category=${this.props.match.params[0]}`)
       .then(response => {
-        this.setState({ joke: response.data })
-        console.log('novo: ', this.state.joke)
+        this.setState({ isLoading: true, joke: response.data })
       })
       .catch(error => {
         console.log(error)
@@ -35,7 +36,7 @@ class JokeDirectory extends Component {
       .get(`https://api.chucknorris.io/jokes/random?category=${this.props.match.params[0]}`)
       .then(response => {
         console.log(response.data)
-        this.setState({ joke: response.data })
+        this.setState({ isLoading: true, joke: response.data })
       })
       .catch(error => {
         console.log(error)
@@ -43,16 +44,17 @@ class JokeDirectory extends Component {
   }
 
   render() {
-    if (!this.state.joke.value) {
-      return null
+    if (!this.state.isLoading) {
+      return <Loading />
     }
     console.log(this.props.match.params[0])
+    const { value } = this.state.joke
     return (
       <div className="joke-directory">
-        <p>{`"${this.state.joke.value}"`}</p>
+        <p>{`"${value}"`}</p>
         <div>
-          <CustomButton onClick={this.getJokeByCategory} isMoreJokes>
-            One more Fact
+          <CustomButton isMoreJokes onClick={this.getJokeByCategory}>
+            One more Fact...
           </CustomButton>
         </div>
       </div>

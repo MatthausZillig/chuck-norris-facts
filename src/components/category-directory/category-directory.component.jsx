@@ -38,10 +38,10 @@ class CategoryDirectory extends Component {
   }
 
   render() {
-    console.log(this.state.categories)
+    const { categories } = this.state
     return (
       <div className="category-directory">
-        {this.state.categories.map((item, index) => (
+        {categories.map((item, index) => (
           <CategoryItem key={index} category={item} />
         ))}
       </div>

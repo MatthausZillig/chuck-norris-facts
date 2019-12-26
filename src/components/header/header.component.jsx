@@ -10,7 +10,7 @@ const Header = () => {
         <img className="header__src" src={Logo} alt="Chuck Norris icon" />
       </Link>
       <div className="header__content">
-        <h1 className="header__content__text">CHUCK NORRIS FACTS</h1>
+        <h1 className="header__content__text">CHUCK NORRIS FACTS!</h1>
       </div>
     </div>
   )

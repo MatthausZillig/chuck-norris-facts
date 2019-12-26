@@ -1,3 +1,5 @@
+$break-small: 600px;
+$break-large: 1200px;
 .header {
   display: flex;
   flex-direction: column;
@@ -9,5 +11,10 @@
   }
   .header__content {
     align-self: center;
+    .header__content__text {
+      @media screen and (max-width: $break-small) {
+        font-size: 1.6rem;
+      }
+    }
   }
 }
