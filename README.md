@@ -1,5 +1,8 @@
 ## Chuck Norris Facts!
 
+Web app built with React, lazy loading, sass.
+To remember the greatness of the infamous Chuck Norris.
+
 ## Available Scripts
 
 In the project directory, you can run:
