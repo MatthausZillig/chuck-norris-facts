@@ -1,8 +1,5 @@
 {
   "name": "chuck-norris-facts",
-  "engines": {
-    "node": "12.13.1"
-  },
   "version": "0.1.0",
   "private": true,
   "homepage": "https://myusername.github.io",
