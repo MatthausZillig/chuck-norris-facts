@@ -35,7 +35,6 @@ class JokeDirectory extends Component {
     axios
       .get(`https://api.chucknorris.io/jokes/random?category=${this.props.match.params[0]}`)
       .then(response => {
-        console.log(response.data)
         this.setState({ isLoading: true, joke: response.data })
       })
       .catch(error => {
@@ -47,7 +46,7 @@ class JokeDirectory extends Component {
     if (!this.state.isLoading) {
       return <Loading />
     }
-    console.log(this.props.match.params[0])
+
     const { value } = this.state.joke
     return (
       <div className="joke-directory">

@@ -16,7 +16,6 @@ class CategoryDirectory extends Component {
   static contextType = CategoryContext
   render() {
     const { categories } = this.state
-    console.log(this.context)
     const { data } = this.context
     return (
       <div className="category-directory">
