@@ -50,7 +50,7 @@ $black-color: #000;
       transition: 0.3s;
     }
   }
-  @media screen and (max-width: $break-large) {
+  @media screen and (min-width: $break-large) {
     &:hover {
       width: 23%;
     }
