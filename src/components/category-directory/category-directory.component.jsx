@@ -1,30 +1,25 @@
 /* eslint-disable implicit-arrow-linebreak */
-import React, { Component } from 'react'
+import React from 'react'
+import { connect } from 'react-redux'
 import CategoryItem from '../../components/category-item/category-item.component'
-import { CategoryContext } from '../../contexts/categoryContext'
+
 import './category-directory.styles.scss'
 
-class CategoryDirectory extends Component {
-  constructor() {
-    super()
-
-    this.state = {
-      categories: []
-    }
+const CategoryDirectory = ({ categoryJokes }) => {
+  if (!categoryJokes.categoryJokes) {
+    return null
   }
 
-  static contextType = CategoryContext
-  render() {
-    const { categories } = this.state
-    const { data } = this.context
-    return (
-      <div className="category-directory">
-        {data.map((item, index) => (
-          <CategoryItem key={index} category={item} />
-        ))}
-      </div>
-    )
-  }
+  return (
+    <div className="category-directory">
+      {categoryJokes.categoryJokes.map((item, index) => (
+        <CategoryItem key={index} category={item} />
+      ))}
+    </div>
+  )
 }
 
-export default CategoryDirectory
+const mapStateToProps = state => ({
+  categoryJokes: state.data.categoryJokes
+})
+export default connect(mapStateToProps)(CategoryDirectory)
