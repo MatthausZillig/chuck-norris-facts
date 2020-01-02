@@ -23,7 +23,7 @@ $black-color: #000;
   }
 
   &.isMobile {
-    visibility: hidden;
+    display: none;
   }
 
   &.more-jokes {
@@ -38,12 +38,12 @@ $black-color: #000;
 
   @media screen and (max-width: $break-small) {
     &.isMobile {
-      visibility: visible;
+      display: block;
       background-color: $black-color;
       color: white;
       border: none;
       &:hover {
-        border: none;
+        border: #fff;
       }
     }
   }
