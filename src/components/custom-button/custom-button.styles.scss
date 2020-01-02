@@ -42,6 +42,9 @@ $black-color: #000;
       background-color: $black-color;
       color: white;
       border: none;
+      &:hover {
+        border: none;
+      }
     }
   }
 }
