@@ -16,7 +16,7 @@ class CategoryDirectory extends Component {
   }
 
   seeMore() {
-    this.setState({ seeMore: !this.state.seeMore })
+    this.setState({ seeMore: !this.state.seeMore }, () => console.log(this.state.seeMore))
   }
   static contextType = CategoryContext
   render() {
