@@ -1,6 +1,8 @@
 ## Chuck Norris Facts!
 
-Web app built with React, lazy loading, sass.
+Web app built with React, lazy loading, sass, for managing state was used Context API and another version with Redux, with redux pattern.
+
+with Context API: https://matthaus-chuck-norris-facts.netlify.com/
 To remember the greatness of the infamous Chuck Norris.
 
 ## Available Scripts
