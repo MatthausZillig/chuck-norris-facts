@@ -44,6 +44,11 @@ $black-color: #000;
 
   @media screen and (max-width: $break-small) {
     width: 100%;
+    &:hover {
+      color: #fff;
+      width: 100%;
+      transition: 0.3s;
+    }
   }
 
   &:hover {

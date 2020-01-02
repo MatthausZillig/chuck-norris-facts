@@ -12,9 +12,9 @@ $black-color: #000;
   border-radius: 10px;
 
   @media screen and (max-width: $break-small) {
-    width: 55vh;
+    width: 50vh;
     height: 60vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(187, 182, 182));
+
     &.category-directory_seeMore {
       height: 100%;
       transition: all 0.3s;
