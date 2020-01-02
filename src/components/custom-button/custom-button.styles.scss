@@ -39,6 +39,8 @@ $black-color: #000;
   @media screen and (max-width: $break-small) {
     &.isMobile {
       visibility: visible;
+      background-color: black;
+      color: white;
     }
   }
 }
