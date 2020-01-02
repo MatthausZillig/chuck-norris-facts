@@ -1,3 +1,6 @@
+$break-small: 600px;
+$break-large: 1200px;
+$black-color: #000;
 .custom-button {
   min-width: 165px;
   width: auto;
@@ -19,6 +22,10 @@
     border: 1px solid black;
   }
 
+  &.isMobile {
+    visibility: hidden;
+  }
+
   &.more-jokes {
     background-color: #f15b23;
     color: #fff;
@@ -26,6 +33,12 @@
     &:hover {
       background-color: #ce4310;
       border: none;
+    }
+  }
+
+  @media screen and (max-width: $break-small) {
+    &.isMobile {
+      visibility: visible;
     }
   }
 }
