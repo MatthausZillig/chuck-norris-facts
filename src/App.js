@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Header from './components/header/header.component'
+import Footer from './components/footer/footer.component'
 import Loading from './components/loading/loading.component'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
@@ -14,7 +15,7 @@ const Joke = React.lazy(() => import('./pages/joke/joke.component'))
 function App() {
   return (
     <CategoryContextProvider>
-      <main>
+      <main className="app">
         <Suspense fallback={<Loading />}>
           <Header />
           <Switch>
@@ -22,6 +23,7 @@ function App() {
             <Route exact path="/*" component={Joke} />
           </Switch>
         </Suspense>
+        <Footer />
       </main>
     </CategoryContextProvider>
   )

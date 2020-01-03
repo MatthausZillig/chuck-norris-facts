@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Header = ({ location: { pathname } }) => {
   return (
-    <div className="header">
+    <header className="header">
       <Link className="header__logo" to="/">
         <img className="header__src" src={Logo} alt="Chuck Norris icon" />
       </Link>
@@ -17,7 +17,7 @@ const Header = ({ location: { pathname } }) => {
         </Link>
         <h1 className="header__content__text">CHUCK NORRIS FACTS!</h1>
       </div>
-    </div>
+    </header>
   )
 }
 

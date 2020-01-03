@@ -3,8 +3,8 @@ import CategoryDirectory from '../../components/category-directory/category-dire
 import './category.styles.scss'
 
 const Category = () => (
-  <main className="category">
+  <section className="category">
     <CategoryDirectory />
-  </main>
+  </section>
 )
 export default Category
