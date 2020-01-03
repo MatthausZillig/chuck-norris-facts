@@ -1,6 +1,7 @@
 .joke-directory {
   width: 100%;
   display: flex;
+  min-height: 400px;
   flex-wrap: wrap;
   justify-content: space-around;
   font-style: italic;
