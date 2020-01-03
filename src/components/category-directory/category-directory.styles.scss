@@ -6,18 +6,19 @@ $black-color: #000;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 55vh;
+  height: auto;
   overflow: hidden;
   margin-bottom: 20px;
   border-radius: 10px;
 
   @media screen and (max-width: $break-small) {
-    width: 55vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(187, 182, 182));
+    width: 50vh;
+    height: 60vh;
+
     &.category-directory_seeMore {
       height: 100%;
       transition: all 0.3s;
-      background: #fff;
+      background: none;
     }
   }
 }

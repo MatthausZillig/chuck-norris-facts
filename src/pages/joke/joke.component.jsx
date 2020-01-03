@@ -3,8 +3,8 @@ import JokeDirectory from '../../components/joke-directory/joke-directory.compon
 import './joke.styles.scss'
 
 const Joke = () => (
-  <main className="category">
+  <section className="joke">
     <JokeDirectory />
-  </main>
+  </section>
 )
 export default Joke

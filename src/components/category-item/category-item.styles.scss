@@ -43,12 +43,21 @@ $black-color: #000;
   }
 
   @media screen and (max-width: $break-small) {
-    width: 100%;
+    width: 100% !important;
+    &:hover {
+      color: #fff;
+      width: 100% !important;
+      transition: 0.3s;
+    }
+  }
+  @media screen and (min-width: $break-large) {
+    &:hover {
+      width: 23%;
+    }
   }
 
   &:hover {
     color: #fff;
-    width: 23%;
     transition: 0.3s;
   }
 

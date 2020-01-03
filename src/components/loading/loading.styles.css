@@ -11,4 +11,5 @@
   height: 50px;
   z-index: 100;
   animation: spin 1.2s linear infinite;
+  margin: 0 auto;
 }

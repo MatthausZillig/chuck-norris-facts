@@ -10,7 +10,17 @@ $break-large: 1200px;
     }
   }
   .header__content {
+    display: flex;
     align-self: center;
+    .header__icon {
+      display: none;
+      &.visible {
+        display: block;
+      }
+      align-self: center;
+      margin-right: 20px;
+      cursor: pointer;
+    }
     .header__content__text {
       @media screen and (max-width: $break-small) {
         font-size: 1.6rem;
