@@ -15,7 +15,7 @@ const Header = ({ location: { pathname } }) => {
         <Link className={`header__icon ${pathname === '/' ? '' : 'visible'}`} to="/">
           <FontAwesomeIcon icon="arrow-left" color="#000" size="lg" />
         </Link>
-        <h1 className="header__content__text">CHUCK NORRIS FACTS!</h1>
+        <h1 className="header__content__text">THE CHUCK NORRIS FACTS!</h1>
       </div>
     </header>
   )
