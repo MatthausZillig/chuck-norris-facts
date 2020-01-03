@@ -7,23 +7,14 @@ $black-color: #000;
   cursor: pointer;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid $black-color;
   background: none;
   transition: 0.8s;
   position: relative;
   overflow: hidden;
   color: $black-color;
-  -webkit-box-shadow: 6px 9px 10px 0px rgba(0, 0, 0, 0.45);
-  -moz-box-shadow: 6px 9px 10px 0px rgba(0, 0, 0, 0.45);
-  box-shadow: 6px 9px 10px 0px rgba(0, 0, 0, 0.45);
-
-  // &:first-child {
-  //   width: 150vh;
-  // }
-
-  // &:last-child {
-  //   width: 150vh;
-  // }
+  -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.55);
 
   &::before {
     content: '';
