@@ -1,5 +1,5 @@
 import React, { createContext, Component } from 'react'
-import axios from 'axios'
+import api from '../services/api'
 
 export const CategoryContext = createContext()
 
@@ -12,8 +12,8 @@ class CategoryContextProvider extends Component {
   }
 
   componentDidMount() {
-    axios
-      .get('https://api.chucknorris.io/jokes/categories')
+    api
+      .get('/categories')
       .then(response => {
         this.setState({ data: response.data }, console.log(this.state.data))
       })

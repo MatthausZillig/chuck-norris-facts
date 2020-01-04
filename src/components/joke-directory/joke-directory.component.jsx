@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import CustomButton from '../custom-button/custom-button.component'
 import Loading from '../loading/loading.component'
-import axios from 'axios'
+import api from '../../services/api'
 import './joke-directory.styles.scss'
 
 class JokeDirectory extends Component {
@@ -21,7 +21,7 @@ class JokeDirectory extends Component {
 
   getJokeByCategory() {
     this.setState({ isLoading: false })
-    axios
+    api
       .get(`https://api.chucknorris.io/jokes/random?category=${this.props.match.params[0]}`)
       .then(response => {
         this.setState({ isLoading: true, joke: response.data })
@@ -32,7 +32,7 @@ class JokeDirectory extends Component {
   }
 
   componentDidMount() {
-    axios
+    api
       .get(`https://api.chucknorris.io/jokes/random?category=${this.props.match.params[0]}`)
       .then(response => {
         this.setState({ isLoading: true, joke: response.data })
