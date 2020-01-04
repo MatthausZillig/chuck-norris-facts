@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-$break-small: 600px;
-$break-large: 1200px;
-$black-color: #000;
+@import '../../utilities/break_variables.scss';
+@import '../../utilities/color_variables.scss';
+
 .footer {
   display: none;
   @media screen and (max-width: $break-small) {
     display: block;
-    background: #000;
+    background: $black-color;
     padding: 20px 0px;
   }
 
@@ -29,12 +29,12 @@ $black-color: #000;
     }
   }
   .footer__text {
-    color: #fff;
+    color: $white;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: small;
     .footer__text_love {
-      color: red;
+      color: $red;
     }
   }
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
-$break-small: 600px;
-$break-large: 1200px;
+@import '../../utilities/break_variables.scss';
+
 .header {
   display: flex;
   flex-direction: column;

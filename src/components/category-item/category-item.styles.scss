@@ -1,6 +1,6 @@
-$break-small: 600px;
-$break-large: 1200px;
-$black-color: #000;
+@import '../../utilities/break_variables.scss';
+@import '../../utilities/color_variables.scss';
+
 .category-item {
   width: 20%;
   margin: 10px;
@@ -36,7 +36,7 @@ $black-color: #000;
   @media screen and (max-width: $break-small) {
     width: 100% !important;
     &:hover {
-      color: #fff;
+      color: $white;
       width: 100% !important;
       transition: 0.3s;
     }
@@ -48,7 +48,7 @@ $black-color: #000;
   }
 
   &:hover {
-    color: #fff;
+    color: $white;
     transition: 0.3s;
   }
 
