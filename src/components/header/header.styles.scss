@@ -1,5 +1,6 @@
-$break-small: 600px;
-$break-large: 1200px;
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+@import '../../utilities/break_variables.scss';
+
 .header {
   display: flex;
   flex-direction: column;
@@ -22,8 +23,9 @@ $break-large: 1200px;
       cursor: pointer;
     }
     .header__content__text {
+      font-family: 'Rock Salt', cursive;
       @media screen and (max-width: $break-small) {
-        font-size: 1.6rem;
+        font-size: 1rem;
       }
     }
   }

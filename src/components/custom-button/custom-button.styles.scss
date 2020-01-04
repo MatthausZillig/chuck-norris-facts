@@ -1,6 +1,6 @@
-$break-small: 600px;
-$break-large: 1200px;
-$black-color: #000;
+@import '../../utilities/break_variables.scss';
+@import '../../utilities/color_variables.scss';
+
 .custom-button {
   min-width: 165px;
   width: auto;
@@ -9,15 +9,16 @@ $black-color: #000;
   line-height: 50px;
   padding: 0 35px 0 35px;
   font-size: 15px;
-  background-color: black;
-  color: white;
+  background-color: $black-color;
+  color: $white;
   text-transform: uppercase;
   font-weight: bolder;
   border: none;
+  border-radius: 12px;
   cursor: pointer;
 
   &:hover {
-    background-color: white;
+    background-color: $white;
     color: $black-color;
     border: 1px solid $black-color;
   }
@@ -27,11 +28,11 @@ $black-color: #000;
   }
 
   &.more-jokes {
-    background-color: #f15b23;
-    color: #fff;
+    background-color: $orange;
+    color: $white;
 
     &:hover {
-      background-color: #ce4310;
+      background-color: $orange-dark;
       border: none;
     }
   }
@@ -40,10 +41,11 @@ $black-color: #000;
     &.isMobile {
       display: block;
       background-color: $black-color;
-      color: white;
+      color: $white;
       border: none;
       &:hover {
-        border: #fff;
+        border: $white;
+        background-color: $grey;
       }
     }
   }

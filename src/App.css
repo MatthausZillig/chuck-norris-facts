@@ -2,9 +2,12 @@
 
 body {
   font-family: 'Bebas Neue', cursive;
+  height: 100%;
 }
 
 .app {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
+  position: relative;
 }

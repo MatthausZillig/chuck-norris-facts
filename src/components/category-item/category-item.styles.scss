@@ -1,29 +1,20 @@
-$break-small: 600px;
-$break-large: 1200px;
-$black-color: #000;
+@import '../../utilities/break_variables.scss';
+@import '../../utilities/color_variables.scss';
+
 .category-item {
   width: 20%;
   margin: 10px;
   cursor: pointer;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid $black-color;
   background: none;
   transition: 0.8s;
   position: relative;
   overflow: hidden;
   color: $black-color;
-  -webkit-box-shadow: 6px 9px 10px 0px rgba(0, 0, 0, 0.45);
-  -moz-box-shadow: 6px 9px 10px 0px rgba(0, 0, 0, 0.45);
-  box-shadow: 6px 9px 10px 0px rgba(0, 0, 0, 0.45);
-
-  // &:first-child {
-  //   width: 150vh;
-  // }
-
-  // &:last-child {
-  //   width: 150vh;
-  // }
+  -webkit-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.55);
 
   &::before {
     content: '';
@@ -45,7 +36,7 @@ $black-color: #000;
   @media screen and (max-width: $break-small) {
     width: 100% !important;
     &:hover {
-      color: #fff;
+      color: $white;
       width: 100% !important;
       transition: 0.3s;
     }
@@ -57,7 +48,7 @@ $black-color: #000;
   }
 
   &:hover {
-    color: #fff;
+    color: $white;
     transition: 0.3s;
   }
 
