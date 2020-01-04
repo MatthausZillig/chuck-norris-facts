@@ -9,6 +9,7 @@ const Footer = () => {
         <a
           className="footer__linkedin"
           target="_blank"
+          rel="noopener"
           href="https://www.linkedin.com/in/matthaus-zillig/"
         >
           <svg
@@ -27,7 +28,12 @@ const Footer = () => {
             ></path>
           </svg>
         </a>
-        <a className="footer__github" target="_blank" href="https://github.com/MatthausZillig">
+        <a
+          className="footer__github"
+          rel="noopener"
+          target="_blank"
+          href="https://github.com/MatthausZillig"
+        >
           <svg
             aria-hidden="true"
             focusable="false"
