@@ -1,13 +1,13 @@
 const INITIAL_STATE = {
-  categoryJokes: []
+  jokes: []
 }
 
 const jokesReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case 'SET_JOKE':
+    case 'SET_JOKES':
       return {
         ...state,
-        categoryJokes: action.payload
+        jokes: action.payload
       }
     default:
       return state

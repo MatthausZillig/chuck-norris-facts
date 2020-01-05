@@ -5,14 +5,17 @@ import CategoryItem from '../../components/category-item/category-item.component
 
 import './category-directory.styles.scss'
 
-const CategoryDirectory = ({ categoryJokes }) => {
-  if (!categoryJokes.categoryJokes) {
+const CategoryDirectory = ({
+  categoryJokes: {
+    categoryJokes: { categoryJokes }
+  }
+}) => {
+  if (!categoryJokes) {
     return null
   }
-
   return (
     <div className="category-directory">
-      {categoryJokes.categoryJokes.map((item, index) => (
+      {categoryJokes.map((item, index) => (
         <CategoryItem key={index} category={item} />
       ))}
     </div>
@@ -20,6 +23,6 @@ const CategoryDirectory = ({ categoryJokes }) => {
 }
 
 const mapStateToProps = state => ({
-  categoryJokes: state.data.categoryJokes
+  categoryJokes: state.categoriesReducer
 })
 export default connect(mapStateToProps)(CategoryDirectory)

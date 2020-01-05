@@ -1,4 +1,4 @@
-export const setJoke = data => ({
-  type: 'SET_JOKE',
+export const setJokes = data => ({
+  type: 'SET_JOKES',
   payload: data
 })

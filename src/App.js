@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { Route, Switch } from 'react-router-dom'
 import Header from './components/header/header.component'
 import Loading from './components/loading/loading.component'
-import { setJoke } from './redux/jokes/jokes.actions'
+import { setCategories } from './redux/categories/categories.actions'
 import axios from 'axios'
 import './App.css'
 
@@ -12,12 +12,12 @@ const Joke = React.lazy(() => import('./pages/joke/joke.component'))
 
 class App extends React.Component {
   componentDidMount() {
-    const { setJoke } = this.props
+    const { setCategories } = this.props
 
     axios
       .get('https://api.chucknorris.io/jokes/categories')
       .then(response => {
-        setJoke({ categoryJokes: response.data })
+        setCategories({ categoryJokes: response.data })
       })
       .catch(error => {
         console.log(error)
@@ -40,7 +40,7 @@ class App extends React.Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  setJoke: data => dispatch(setJoke(data))
+  setCategories: data => dispatch(setCategories(data))
 })
 
 export default connect(null, mapDispatchToProps)(App)
