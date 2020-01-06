@@ -8,18 +8,18 @@
       "type": "image/x-icon"
     },
     {
-      "src": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
+      "src": "icons8-chuck-norris-100.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
+      "src": "icons8-chuck-norris-100.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": "https://matthaus-chuck-norris-facts.netlify.com",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#fff",
+  "background_color": "#000"
 }
