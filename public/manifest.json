@@ -1,17 +1,7 @@
 {
-  "short_name": "Chuck Facts",
+  "short_name": "The Chuck Facts",
   "name": "The Chuck Norris Facts",
   "icons": [
-    {
-      "src": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "icons8-chuck-norris-100.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
     {
       "src": "icons8-chuck-norris-100.png",
       "type": "image/png",
