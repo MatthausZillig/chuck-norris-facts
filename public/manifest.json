@@ -10,6 +10,11 @@
     {
       "src": "icons8-chuck-norris-100.png",
       "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icons8-chuck-norris-100.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],

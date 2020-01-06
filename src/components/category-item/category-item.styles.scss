@@ -40,6 +40,10 @@
       width: 100% !important;
       transition: 0.3s;
     }
+    .category-item__value {
+      font-weight: lighter;
+      font-size: 1.2rem;
+    }
   }
   @media screen and (min-width: $break-large) {
     &:hover {
